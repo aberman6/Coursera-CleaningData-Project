@@ -93,4 +93,4 @@ tidyData <- aggregate(finalDataNoAct[,names(finalDataNoAct) != c('activityID','s
 tidyData <- merge(tidyData,activity_labels,by='activityID',all.x=TRUE)
 
 #export tidyData
-write.table(tidyData, './tidyData.txt',row.names=FALSE,sep='\t')
+write.table(tidyData, './tidyData.txt',row.names=FALSE)
